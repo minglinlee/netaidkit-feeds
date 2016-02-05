@@ -9,7 +9,7 @@ PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 
 PKG_SOURCE_PROTO=git
 PKG_SOURCE_URL=https://github.com/msgctl/netaidkit-nakd.git
-PKG_VERSION = d4b4aaece559e18090774352a20123feba12ce4b
+PKG_SOURCE_VERSION = d4b4aaece559e18090774352a20123feba12ce4b
 
 include $(INCLUDE_DIR)/package.mk
 
