@@ -34,6 +34,28 @@ define Package/$(PKG_NAME)/install
 	$(INSTALL_DIR) $(1)/www
 	$(INSTALL_DIR) $(1)/run/nakd
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/nakd $(1)/usr/bin/nakd
+	$(INSTALL_BIN) $(PKG_SOURCE_DIR)/root/etc/init.d/netaidkit \
+		$(1)/etc/init.d/netaidkit
+endef
+
+define Package/$(PKG_NAME)/postinst
+#!/bin/sh
+# check if we are on real system
+if [ -z "$${IPKG_INSTROOT}" ]; then
+        echo "Enabling rc.d symlink for netaidkit"
+        /etc/init.d/netaidkit enable
+fi
+exit 0
+endef
+
+define Package/$(PKG_NAME)/prerm
+#!/bin/sh
+# check if we are on real system
+if [ -z "$${IPKG_INSTROOT}" ]; then
+        echo "Removing rc.d symlink for netaidkit"
+        /etc/init.d/netaidkit disable
+fi
+exit 0
 endef
 
 $(eval $(call BuildPackage,$(PKG_NAME)))
