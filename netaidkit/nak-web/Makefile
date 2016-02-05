@@ -7,6 +7,9 @@ PKG_RELEASE:=1
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 
+PKG_SOURCE_PROTO=git
+PKG_SOURCE_URL=https://github.com/msgctl/netaidkit-nakd.git
+
 include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
