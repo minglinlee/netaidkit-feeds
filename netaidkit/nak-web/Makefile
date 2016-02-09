@@ -34,6 +34,7 @@ define Package/$(PKG_NAME)/install
 	$(INSTALL_DIR) $(1)/www
 	$(INSTALL_DIR) $(1)/run/nakd
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/nakd $(1)/usr/bin/nakd
+	$(INSTALL_DIR) $(1)/etc/init.d
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/etc/init.d/netaidkit \
 		$(1)/etc/init.d/netaidkit
 endef
