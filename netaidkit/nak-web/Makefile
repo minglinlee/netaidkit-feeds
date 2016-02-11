@@ -26,7 +26,7 @@ define Package/$(PKG_NAME)/description
 	NetAidKit web user interface
 endef
 
-define Package/$(PKG_NAME)/compile
+define Build/Compile
 endef
 
 define Package/$(PKG_NAME)/install
