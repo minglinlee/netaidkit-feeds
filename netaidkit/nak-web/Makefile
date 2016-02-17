@@ -4,7 +4,7 @@ PKG_NAME:=nak-web
 
 PKG_SOURCE_PROTO=git
 PKG_SOURCE_URL=https://github.com/msgctl/netaidkit-web.git
-PKG_SOURCE_VERSION=7fc14225474490be31ca007f812a94d5013db4eb
+PKG_SOURCE_VERSION=854f5f8f9cd85cfb9e267e1b9c1168d1064cea77
 
 PKG_VERSION:=$(shell cut -c-8 <<< $(PKG_SOURCE_VERSION))
 PKG_RELEASE:=1
