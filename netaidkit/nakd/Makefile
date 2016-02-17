@@ -4,7 +4,7 @@ PKG_NAME:=nakd
 
 PKG_SOURCE_PROTO=git
 PKG_SOURCE_URL=https://github.com/msgctl/netaidkit-nakd.git
-PKG_SOURCE_VERSION=34998399a41582fab45cc51706bf877a257d784a
+PKG_SOURCE_VERSION=1.0
 
 PKG_VERSION:=$(shell cut -c-8 <<< $(PKG_SOURCE_VERSION))
 PKG_RELEASE:=1
