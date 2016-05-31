@@ -37,6 +37,8 @@ define Package/$(PKG_NAME)/install
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/nakd $(1)/usr/bin/nakd
 
 	$(CP) $(PKG_BUILD_DIR)/root/* $(1)/
+
+	$(CP) $(PKG_BUILD_DIR)/root/etc $(1)/usr/share/nakd/defaults
 endef
 
 define Package/$(PKG_NAME)/postinst
