@@ -20,7 +20,8 @@ define Package/$(PKG_NAME)
 	CATEGORY:=NetAidKit
 	TITLE:=$(PKG_NAME)
 	DEPENDS:=+lighttpd +lighttpd-mod-cgi +libjson-c +libubus +libubox \
-		+libblobmsg-json +libuci +wireless-tools +librt +libiwinfo
+		+libblobmsg-json +libuci +wireless-tools +librt +libiwinfo \
+        +libmicrohttpd
 endef
 
 define Package/$(PKG_NAME)/description
