@@ -21,7 +21,7 @@ define Package/$(PKG_NAME)
 	TITLE:=$(PKG_NAME)
 	DEPENDS:=+lighttpd +lighttpd-mod-cgi +libjson-c +libubus +libubox \
 		+libblobmsg-json +libuci +wireless-tools +librt +libiwinfo \
-        +libmicrohttpd
+        +libmicrohttpd +libnl
 endef
 
 define Package/$(PKG_NAME)/description
