@@ -4,7 +4,7 @@ PKG_NAME:=nak-web
 
 PKG_SOURCE_PROTO=git
 PKG_SOURCE_URL=https://github.com/minglinlee/netaidkit-web.git
-PKG_SOURCE_VERSION=trunk
+PKG_SOURCE_VERSION=alfa-ap121f
 
 PKG_VERSION:=$(shell cut -c-8 <<< $(PKG_SOURCE_VERSION))
 PKG_RELEASE:=1
