@@ -3,7 +3,7 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=nak-web
 
 PKG_SOURCE_PROTO=git
-PKG_SOURCE_URL=https://github.com/radicallyopensecurity/netaidkit-web.git
+PKG_SOURCE_URL=https://github.com/minglinlee/netaidkit-web.git
 PKG_SOURCE_VERSION=trunk
 
 PKG_VERSION:=$(shell cut -c-8 <<< $(PKG_SOURCE_VERSION))
