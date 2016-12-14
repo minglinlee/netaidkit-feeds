@@ -21,7 +21,7 @@ define Package/$(PKG_NAME)
 	TITLE:=$(PKG_NAME)
 	DEPENDS:=+libjson-c +libubus +libubox \
 		+libblobmsg-json +libuci +wireless-tools +librt +libiwinfo \
-        +libmicrohttpd +libnl +libuuid
+        +libmicrohttpd +libnl +libuuid +libopenssl
 endef
 
 define Package/$(PKG_NAME)/description
